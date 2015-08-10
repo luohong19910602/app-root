@@ -24,6 +24,17 @@
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         
+        <dependency>
+            <groupId>com.skg.luohong</groupId>
+            <artifactId>biz-gl</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.skg.luohong</groupId>
+            <artifactId>biz-ou</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
         
     </dependencies>
 
