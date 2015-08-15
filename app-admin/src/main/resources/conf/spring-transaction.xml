@@ -37,7 +37,7 @@
 
 	<aop:config>
 		<aop:pointcut id="service"
-			expression="execution(* cn.springmvc.service.impl.*.*(..))" />
+			expression="execution(* com.ckg.luohong.biz.*.*.service.impl.*.*(..))" />
 		<aop:advisor pointcut-ref="service" advice-ref="advice" />
 	</aop:config>
 </beans>

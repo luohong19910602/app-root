@@ -70,13 +70,13 @@
 		p:mapperLocations="classpath:mapper/*.xml" /> -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
 		p:dataSource-ref="dataSource" 
-		p:configLocation="classpath:conf/mybatis-config.xml" />
-
-
-	<!-- spring与mybatis整合配置，扫描所有dao -->
+		p:configLocation="classpath:conf/mybatis-config.xml"
+		p:mapperLocations="classpath:com/skg/luohong/biz/*/*/entity/*.xml"
+		 />
+	<!-- spring与mybatis整合配置，扫描所有mapper -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
-		p:basePackage="cn.springmvc.dao" 
+		p:basePackage="com.skg.luohong.biz.*.*.entity" 
 		p:sqlSessionFactoryBeanName="sqlSessionFactory" />
-
+		
     <import resource="spring-transaction.xml"/>
 </beans>
