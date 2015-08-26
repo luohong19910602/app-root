@@ -11,5 +11,4 @@
 	<context:component-scan base-package="com.skg.luohong.biz.*.*.dao.impl" />
     <!-- 扫描所有的service-->
 	<context:component-scan base-package="com.skg.luohong.biz.*.*.service.impl" />
-	
 </beans>
