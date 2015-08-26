@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.skg.luohong.biz.gl.system.service.IDaysUserService;
+import com.skg.luohong.biz.ou.system.entity.SkgOuResEntity;
+import com.skg.luohong.biz.ou.system.service.ISkgOuResService;
 
 
 /**
@@ -24,12 +25,13 @@ import com.skg.luohong.biz.gl.system.service.IDaysUserService;
 public class BaseTest{
     
 	@Autowired
-	private IDaysUserService service;
+	private ISkgOuResService service;
 	
 	@Test
 	public void add(){
 		System.out.println(service);
+		SkgOuResEntity entity = new SkgOuResEntity();
+		//service.add(entity);
 		System.out.println(service.findAll());
-		System.out.println("what the fuck");
 	}
 }
