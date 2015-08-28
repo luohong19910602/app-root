@@ -23,11 +23,19 @@
 		</plugins>
 	</build>
 
+
 	<groupId>com.skg.luohong</groupId>
 	<artifactId>app-admin</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>app-admin</name>
 	<packaging>war</packaging>
-
 	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.skg.luohong</groupId>
+			<artifactId>base-web</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
